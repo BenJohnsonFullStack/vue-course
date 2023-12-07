@@ -7,11 +7,12 @@
   <body>
     <div id="app" v-cloak>
       <p>{{ fullName() }}</p>
+      <p><a :href="url" target="_blank">Google</a></p>
       <hr />
 
       <label> First Name</label>
       <input type="text" v-model="firstName" />
-      <label> Last Name Name</label>
+      <label> Last Name</label>
       <input type="text" v-model="lastName" />
     </div>
     <!-- <div id="poop">{{firstName}} {{lastName}}</div> -->
