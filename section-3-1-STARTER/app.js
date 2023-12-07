@@ -26,5 +26,11 @@ const vm = Vue.createApp({
       this.rotateY = 0;
       this.rotateZ = 0;
     },
+    copy() {
+      let text = `transform:${this.box.transform};`;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("CSS copied to clipboard");
+      });
+    },
   },
 }).mount("#app");
